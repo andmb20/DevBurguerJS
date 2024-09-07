@@ -27,5 +27,11 @@ function sumAll(){
     const sumAllItems = menuOptions.reduce((acc, current) => acc + current.price, 0)
 
     list.innerHTML = `<li><p>A soma total dos itens é: <br> R$ ${sumAllItems}</p></li>`
+}
+
+function filterAll() {
+    const filterVeganItems = menuOptions.filter((products) => products.vegan)
+
+    showAll(filterVeganItems)
     
 }
