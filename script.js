@@ -26,6 +26,6 @@ function mapAll() {
 function sumAll(){
     const sumAllItems = menuOptions.reduce((acc, current) => acc + current.price, 0)
 
-    list.innerHTML = `<p>A soma total dos itens é: <br> R$ ${sumAllItems}</p>`
+    list.innerHTML = `<li><p>A soma total dos itens é: <br> R$ ${sumAllItems}</p></li>`
     
 }
